@@ -1,0 +1,16 @@
+//Imports BASE
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utilities';
+
+//Imports COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+
+//Imports LAYOUT
+@import 'layout/index';
+@import 'layout/biografia';
+@import 'layout/carrera_muscal';
+@import 'layout/eventos';
+@import 'layout/contacto';
+@import 'layout/mediaquaries';

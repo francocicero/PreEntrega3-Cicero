@@ -1,0 +1,32 @@
+.nav-footer{
+    background-color:rgb(51, 16, 88);
+    padding:15px;
+    text-align:right ;
+
+    .ul-footer{
+        list-style-type: none;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: 50px;
+
+        a{
+            color: rgb(255, 255, 255);
+        }
+
+        .bi-instagram:hover{
+            color: rgba(242, 57, 28, 0.993);
+            transition: .5s;
+        }
+
+        .bi-twitter:hover{
+            color: rgb(70, 190, 255);
+            transition: .5s;
+        }
+
+        .bi-tiktok:hover{
+            color: black;
+            transition: .5s;
+        }
+    }
+}

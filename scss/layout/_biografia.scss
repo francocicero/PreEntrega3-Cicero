@@ -1,0 +1,112 @@
+.card-grid-bio{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'descrip descrip img'
+    'descrip descrip img'
+    ;
+    gap:5px;
+    background-color: rgb(147, 114, 197);
+    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+
+    img{
+        grid-area: img;
+        @include imagenes(70%, 100%, cover);
+        display: flex;
+        justify-self: end;
+    }
+
+    p{
+        grid-area: descrip;
+        font-size: 25.2px;
+        font-family: $font;
+        color: $main-color;
+    }
+
+    &:hover{
+        box-shadow: 0px 0px 50px 0px $main-color;
+        transition: 1s;
+    }
+}
+
+.h2-amor{
+    @include flexbox(row, center);
+    font-family: $font;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 29px;
+}
+
+.card-grid-amor{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'imgg descrip descrip'
+    'imgg descrip descrip'
+    ;
+    gap:5px;
+    background-color: rgb(147, 114, 197);
+    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+
+    img{
+        grid-area: imgg;
+        @include imagenes(90%, 100%, cover);
+    }
+
+    p{
+        padding: 10px;
+        grid-area: descrip;
+        font-family: $font;
+        font-size: 21.8px;
+        color: $main-color;
+    }
+
+    &:hover{
+        box-shadow: 0px 0px 50px 0px $main-color;
+        transition: 1s;
+    }
+}
+
+.h2-religion{
+    @include flexbox(row, center);
+    font-family: $font;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 29px;
+}
+
+.card-grid-religion{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'imgg descrip descrip'
+    'imgg descrip descrip'
+    ;
+    gap:5px;
+    background-color: rgb(147, 114, 197);
+    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+
+    img{
+        grid-area: imgg;
+        @include imagenes(90%, 100%, cover);
+    }
+
+    p{
+        grid-area: descrip;
+        font-family: $font;
+        margin: 29.5px;
+        font-size: 21px;
+        color: $main-color;
+    }
+
+    &:hover{
+        box-shadow: 0px 0px 50px 0px $main-color;
+        transition: 1s;
+    }
+}

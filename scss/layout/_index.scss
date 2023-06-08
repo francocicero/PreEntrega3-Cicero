@@ -1,0 +1,41 @@
+.foto-principal{
+    margin: 20px;
+
+    &:hover{
+        box-shadow: 0px 20px 20px 0px rgb(115, 51, 211);
+        transition: .5s;
+    }
+}
+
+.justice-portada img{
+    position: absolute;
+    margin: 20px;
+    @include imagenes(25%, 50%, cover);
+
+    &:hover{
+        box-shadow: 0px 0px 60px 0px rgb(12, 167, 33);
+        transition: 1s;
+    }
+}
+
+.changes-portada img{
+    margin: 20px;
+    @include imagenes(25%, 50%, cover);
+
+    &:hover{
+        box-shadow: 0px 0px 60px 0px rgb(248, 26, 26);
+        transition: 1s;
+    }
+}
+
+
+.parrafo-index{
+    color: $main-color;
+    @include flexbox(row, center);
+    margin-top: 0%;
+    margin-right: 30%;
+    margin-bottom: 0%;
+    margin-left: 30%;
+    font-size: 20.3px;
+    font-family: $font;
+}

@@ -1,0 +1,18 @@
+.nav{
+    background-color: rgb(51, 16, 88); 
+    @include flexbox(row,start);
+    gap: 5px;
+
+    .nav-link{
+        font-size: 25px;
+        font-family: $font-link;
+        color: rgb(255, 255, 255);
+
+        &:hover{
+            color:rgb(199, 158, 243);
+            font-size: 25px;
+            transition: .5s;
+            background-color: $main-color;
+        }
+    }
+}

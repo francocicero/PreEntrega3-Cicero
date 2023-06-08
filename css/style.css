@@ -1,538 +1,545 @@
+@charset "UTF-8";
 @font-face {
-    font-family: Links;
-    src: url(../assets/Font/Raleway-VariableFont_wght.ttf)
+  font-family: Links;
+  src: url(../assets/Font/Raleway-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: Titulos;
-    src: url(../assets/Font/Quicksand-VariableFont_wght.ttf)
+  font-family: Titulos;
+  src: url(../assets/Font/Quicksand-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+a {
+  text-decoration: none;
 }
 
-.nav{
-    background-color: rgb(51, 16, 88); 
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+li {
+  list-style-type: none;
 }
 
-.nav-link{
-    font-size: 25px;
-    font-family: Links;
-    color: rgb(255, 255, 255);
-}
-.nav-link:hover{
-    color:rgb(199, 158, 243);
-    font-size: 25px;
-    transition: .5s;
-    background-color: rgb(0, 0, 0);
+body {
+  background-image: radial-gradient(circle, rgb(142, 113, 185), rgb(49, 45, 45));
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-body{
-    background-color: rgb(185, 159, 222);
+footer {
+  margin-top: auto;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(21, 21, 21);
+  font-family: Titulos;
+  padding: 20px;
+}
+
+.nav {
+  background-color: rgb(51, 16, 88);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5px;
+}
+.nav .nav-link {
+  font-size: 25px;
+  font-family: Links;
+  color: rgb(255, 255, 255);
+}
+.nav .nav-link:hover {
+  color: rgb(199, 158, 243);
+  font-size: 25px;
+  transition: 0.5s;
+  background-color: rgb(21, 21, 21);
+}
+
+.nav-footer {
+  background-color: rgb(51, 16, 88);
+  padding: 15px;
+  text-align: right;
+}
+.nav-footer .ul-footer {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 50px;
+}
+.nav-footer .ul-footer a {
+  color: rgb(255, 255, 255);
+}
+.nav-footer .ul-footer .bi-instagram:hover {
+  color: rgba(242, 57, 28, 0.993);
+  transition: 0.5s;
+}
+.nav-footer .ul-footer .bi-twitter:hover {
+  color: rgb(70, 190, 255);
+  transition: 0.5s;
+}
+.nav-footer .ul-footer .bi-tiktok:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.foto-principal {
+  margin: 20px;
+}
+.foto-principal:hover {
+  box-shadow: 0px 20px 20px 0px rgb(115, 51, 211);
+  transition: 0.5s;
+}
+
+.justice-portada img {
+  position: absolute;
+  margin: 20px;
+  width: 25%;
+  height: 50%;
+  object-fit: cover;
+}
+.justice-portada img:hover {
+  box-shadow: 0px 0px 60px 0px rgb(12, 167, 33);
+  transition: 1s;
+}
+
+.changes-portada img {
+  margin: 20px;
+  width: 25%;
+  height: 50%;
+  object-fit: cover;
+}
+.changes-portada img:hover {
+  box-shadow: 0px 0px 60px 0px rgb(248, 26, 26);
+  transition: 1s;
+}
+
+.parrafo-index {
+  color: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0%;
+  margin-right: 30%;
+  margin-bottom: 0%;
+  margin-left: 30%;
+  font-size: 20.3px;
+  font-family: Titulos;
+}
+
+.card-grid-bio {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "descrip descrip img" "descrip descrip img";
+  gap: 5px;
+  background-color: rgb(147, 114, 197);
+  box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+}
+.card-grid-bio img {
+  grid-area: img;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-self: end;
+}
+.card-grid-bio p {
+  grid-area: descrip;
+  font-size: 25.2px;
+  font-family: Titulos;
+  color: rgb(21, 21, 21);
+}
+.card-grid-bio:hover {
+  box-shadow: 0px 0px 50px 0px rgb(21, 21, 21);
+  transition: 1s;
+}
+
+.h2-amor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Titulos;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 29px;
+}
+
+.card-grid-amor {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "imgg descrip descrip" "imgg descrip descrip";
+  gap: 5px;
+  background-color: rgb(147, 114, 197);
+  box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+}
+.card-grid-amor img {
+  grid-area: imgg;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-grid-amor p {
+  padding: 10px;
+  grid-area: descrip;
+  font-family: Titulos;
+  font-size: 21.8px;
+  color: rgb(21, 21, 21);
+}
+.card-grid-amor:hover {
+  box-shadow: 0px 0px 50px 0px rgb(21, 21, 21);
+  transition: 1s;
+}
+
+.h2-religion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Titulos;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 29px;
+}
+
+.card-grid-religion {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "imgg descrip descrip" "imgg descrip descrip";
+  gap: 5px;
+  background-color: rgb(147, 114, 197);
+  box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+}
+.card-grid-religion img {
+  grid-area: imgg;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-grid-religion p {
+  grid-area: descrip;
+  font-family: Titulos;
+  margin: 29.5px;
+  font-size: 21px;
+  color: rgb(21, 21, 21);
+}
+.card-grid-religion:hover {
+  box-shadow: 0px 0px 50px 0px rgb(21, 21, 21);
+  transition: 1s;
+}
+
+.h2s {
+  font-family: Titulos;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-grid-carrera-m {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "img descrip descrip" "img descrip descrip";
+  gap: 5px;
+  background-color: rgb(147, 114, 197);
+  box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
+}
+.card-grid-carrera-m img {
+  grid-area: img;
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+}
+.card-grid-carrera-m p {
+  padding: 18px;
+  grid-area: descrip;
+  font-family: Titulos;
+  font-size: 21px;
+  color: rgb(21, 21, 21);
+}
+.card-grid-carrera-m:hover {
+  box-shadow: 0px 0px 50px 0px rgb(21, 21, 21);
+  transition: 1s;
+}
+
+.h2s {
+  font-family: Titulos;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.eventos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.eventos h5 {
+  color: rgb(21, 21, 21);
+  font-family: Titulos;
+  font-size: 18px;
+}
+.eventos p {
+  color: rgb(21, 21, 21);
+  font-family: Titulos;
+  font-size: 16px;
+}
+.eventos img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  border: 2px solid rgb(57, 11, 85);
+}
+
+.nombre {
+  padding: 12px;
+}
+.nombre label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+.nombre input {
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.apellido {
+  padding: 12px;
+}
+.apellido label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+.apellido input {
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.edad {
+  padding: 12px;
+}
+.edad label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+.edad input {
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.mail {
+  padding: 12px;
+}
+.mail label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+.mail input {
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.contraseña {
+  padding: 12px;
+}
+.contraseña label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+.contraseña input {
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.comentario {
+  padding: 12px;
+}
+.comentario label {
+  font-family: Titulos;
+  font-size: 23px;
+  color: rgb(21, 21, 21);
+}
+
+.comen {
+  padding: 12px;
+  font-family: Titulos;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+.botones {
+  padding: 12px;
+  font-size: 23px;
+  font-family: Titulos;
+}
+
+@media (max-width: 575px) {
+  .nav {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+  }
 }
-
-footer{
-    margin-top: auto;
+@media (max-width: 575px) {
+  h1 {
+    font-size: 15px;
+  }
 }
-
-h1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-family: Titulos;
-    padding: 20px;
-}
-
-.foto-principal{
-    margin: 20px;
-}
-
-.foto-principal:hover{
-    box-shadow: 0px 20px 20px 0px rgb(115, 51, 211);
-    transition: .5s;
-}
-
-.justice-portada img{
-    position: absolute;
-    margin: 20px;
-    width: 500px;
-    height: 500px;
-}
-
-.justice-portada img:hover{
-    box-shadow: 0px 0px 60px 0px rgb(12, 167, 33);
-    transition: 1s;
-}
-
-.changes-portada img{
-    margin: 20px;
-    width: 500px;
-}
-
-.changes-portada img:hover{
-    box-shadow: 0px 0px 60px 0px rgb(248, 26, 26);
-    transition: 1s;
-}
-
-.parrafo-index{
-    color: rgb(0, 0, 0);
-    text-align:center;
-    padding-top:1%;
-    padding-right: 33%;
-    padding-bottom: 0%;
-    padding-left: 33%;
-    font-size: 20.3px;
-    font-family: Titulos;
-    border:1px solid transparent
-}
-
-.nav-footer{
-    background-color:rgb(51, 16, 88);
-    padding:15px;
-    text-align:right ;
-}
-
-.ul-footer{
-    list-style-type: none;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    gap: 50px;
-}
-
-.ul-footer a{
-    color: rgb(255, 255, 255);
-}
-
-.bi-instagram:hover{
-    color: rgba(242, 57, 28, 0.993);
-}
-
-.bi-twitter:hover{
-    color: rgb(70, 190, 255);
-}
-
-.bi-tiktok:hover{
-    color: black;
-}
-
-/*---------------------------------------Ahora va la primera pagina de la pagina web (index) para movil-------------------------------------*/
-
-@media (max-width:575px){
-    .nav{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:575px){
-    h1{
-        font-size: 15px;
-    }
-}
-
-@media (max-width:575px){
-    .justice-portada img{
-    width: 90%;
+@media (max-width: 575px) {
+  .justice-portada img {
+    position: relative;
+    margin: 6% 0;
+    padding: 0;
+    width: 100%;
     height: 60%;
     object-fit: cover;
-    }
+  }
 }
-
-@media (max-width:575px){
-    .changes-portada img{
-        width: 90%;
-        height: 60%;
-        object-fit: cover;
-        margin-top: 138%;
-    }
+@media (max-width: 575px) {
+  .changes-portada img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
 }
-
-@media (max-width:575px){
-    .parrafo-index{
+@media (max-width: 575px) {
+  .parrafo-index {
+    position: relative;
+    margin: 0;
+    padding-top: 3%;
     padding-right: 5%;
     padding-left: 5%;
-    }
+  }
 }
-
-/*-------------------------------------------------------BIOGRAFÍA--------------------------------------------------------------------------*/
-
-.card-grid-bio{
-    margin: 16px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'descrip descrip img'
-    'descrip descrip img'
-    'descrip descrip img'
-    ;
-    gap:5px;
-    background-color: rgb(160, 138, 192);
-    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
-}
-
-
-.card-grid-bio img{
-    grid-area: img;
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    justify-self: end;
-}
-
-.card-grid-descripcion-bio{
-    grid-area: descrip;
-    font-size: 16.5px;
-    font-family: Titulos;
-    color: rgb(0, 0, 0);
-}
-
-.card-grid-bio:hover{
-    box-shadow: 0px 0px 50px 0px black;
-    transition: 1s;
-}
-
-.card-grid-amor{
-    margin: 16px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'imgg descrip descrip'
-    'imgg descrip descrip'
-    ;
-    gap:5px;
-    background-color: rgb(160, 138, 192);
-    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
-}
-
-
-.h2-amor{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Titulos;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 29px;
-}
-
-.card-grid-amor img{
-    grid-area: imgg;
-    width: 550px;
-    height: 500px;
-    object-fit: cover;
-
-}
-
-.card-grid-descripcion-amor{
-    grid-area: descrip;
-    font-family: Titulos;
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-}
-
-.card-grid-amor:hover{
-    box-shadow: 0px 0px 50px 0px black;
-    transition: 1s;
-}
-
-.card-grid-religion{
-    margin: 16px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'imgg descrip descrip'
-    'imgg descrip descrip'
-    ;
-    gap:5px;
-    background-color: rgb(160, 138, 192);
-    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
-}
-
-
-.h2-religion{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Titulos;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 29px;
-}
-
-.card-grid-religion img{
-    grid-area: imgg;
-    width: 550px;
-    height: 500px;
-    object-fit: cover;
-
-}
-
-.card-grid-descripcion-religion{
-    grid-area: descrip;
-    font-family: Titulos;
-    margin: 29.5px;
-    font-size: 21px;
-    color: rgb(0, 0, 0);
-}
-
-.card-grid-religion:hover{
-    box-shadow: 0px 0px 50px 0px black;
-    transition: 1s;
-}
-
-/*--------------------------------------------------------carrera musical------------------------------------------------------------------*/
-
-.card-grid-carrera-m{
-    margin: 16px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'img descrip descrip'
-    'img descrip descrip';
-    gap:5px;
-    background-color: rgb(160, 138, 192);
-    box-shadow: 10px 10px 20px 4px rgb(56, 55, 55);
-}
-
-.card-grid-carrera-m h2{
-    grid-area: titulo;
-}
-
-.card-grid-carrera-m img{
-    grid-area: img;
-    width: 550px;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.card-grid-descripcion-carrera-m{
-    grid-area: descrip;
-    font-family: Titulos;
-    font-size: 17.4px;
-    color: rgb(0, 0, 0);
-}
-
-.card-grid-carrera-m:hover{
-    box-shadow: 0px 0px 50px 0px black;
-    transition: 1s;
-}
-
-.h2s{
-    font-family: Titulos;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-/*--------------------------------------------------CARRERA MUSICAL PARA MOVIL--------------------------------------------------------------*/
-
-@media (max-width:575px){
-    .nav{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:575px){
-    h1{
-        font-size: 20px;
-    }
-}
-
-@media (max-width:575px){
-    h2{
-        font-size: 20px;
-    }
-}
-
-@media (max-width:575px){
-    .card-grid-carrera-m img{
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        display: flex;
-        justify-self: center;
-    }
-}
-
-@media (max-width:575px){
-    .card-grid-carrera-m{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'img img '
-    'descrip descrip ';
-    }
-}
-
-@media (max-width:575px){
-    .card-grid-carrera-m p{
-        font-size: 15px;
-    }
-}
-
-/*---------------------------------------------------------------EVENTOS--------------------------------------------------------------------*/
-
-.eventos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.card h5{
-    color: rgb(0, 0, 0);
-    font-family: Titulos;
-    font-size:18px;
-}
-
-.card p{
-    color: rgb(0, 0, 0);
-    font-family: Titulos;
-    font-size:16px;
-}
-
-.card img{
+@media (max-width: 575px) {
+  .card-grid-bio img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
+    display: flex;
+    justify-self: center;
+  }
 }
-
-
-.table, th, td{
+@media (max-width: 575px) {
+  .card-grid-bio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "img img " "descrip descrip ";
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-bio p {
     font-size: 15px;
-    font-family: Titulos;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-amor img {
     width: 100%;
-    padding: 40px;
-    border: 2px solid black;
-    border-collapse: collapse;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-self: center;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-amor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "imgg imgg " "descrip descrip ";
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-amor p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-religion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-self: center;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-religion {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "imgg imgg " "descrip descrip ";
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-religion p {
+    font-size: 15px;
+  }
+}
+/*--------------------------------------carrera muscal--------------------------------------------------*/
+@media (max-width: 575px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-carrera-m img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-self: center;
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-carrera-m {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "img img " "descrip descrip ";
+  }
+}
+@media (max-width: 575px) {
+  .card-grid-carrera-m p {
+    font-size: 15px;
+  }
 }
 
-th{
-    text-align: center;
-}
-td{
-    text-align: center;
-}
-
-/*-----------------------------------------------------CONTACTO------------------------------------------------------------------------------*/
-
-.nombre{
-    padding: 12px;
-}
-
-.nombre label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-
-.nombre input{
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.apellido{
-    padding: 12px;
-}
-
-.apellido label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-
-.apellido input{
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.edad{
-    padding: 12px;
-}
-
-.edad label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-
-.edad input{
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.mail{
-    padding: 12px;
-}
-
-.mail label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-
-.mail input{
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.contraseña{
-    padding: 12px;
-}
-
-.contraseña label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-
-.contraseña input{
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.comentario{
-    padding: 12px;
-}
-
-.comentario label{
-    font-family: Titulos;
-    font-size: 23px;
-    color: black;
-}
-.comen{
-    padding: 12px;
-    font-family: Titulos;
-    font-size: 23px;
-    border-radius: 3px;
-}
-
-.botones{
-    padding: 12px;
-    font-size: 23px;
-    font-family: Titulos;
-}
+/*# sourceMappingURL=style.css.map */

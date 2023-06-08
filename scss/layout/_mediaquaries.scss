@@ -1,0 +1,159 @@
+@media (max-width:575px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:575px){
+    h1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:575px){
+    .justice-portada img{
+    position: relative;
+    margin: 6% 0;
+    padding: 0;
+    @include imagenes(100%, 60%, cover);
+    }
+}
+
+@media (max-width:575px){
+    .changes-portada img{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        @include imagenes(100%, 60%, cover);
+    }
+}
+
+@media (max-width:575px){
+    .parrafo-index{
+    position: relative;
+    margin: 0;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    }
+}
+
+//BIOGRAFIA
+@media (max-width:575px){
+    .card-grid-bio img{
+        @include imagenes(100%, 100%, cover);
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-bio{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'img img '
+    'descrip descrip ';
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-bio p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-amor img{
+        @include imagenes(100%, 100%, cover);
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-amor{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'imgg imgg '
+    'descrip descrip ';
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-amor p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-religion img{
+        @include imagenes(100%, 100%, cover);
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-religion{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'imgg imgg '
+    'descrip descrip ';
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-religion p{
+        font-size: 15px;
+    }
+}
+
+
+
+/*--------------------------------------carrera muscal--------------------------------------------------*/
+@media (max-width:575px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:575px){
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:575px){
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-carrera-m img{
+        @include imagenes(300px, 300px, cover);
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-carrera-m{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'img img '
+    'descrip descrip ';
+    }
+}
+
+@media (max-width:575px){
+    .card-grid-carrera-m p{
+        font-size: 15px;
+    }
+}

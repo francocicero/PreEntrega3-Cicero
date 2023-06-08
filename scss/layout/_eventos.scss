@@ -1,0 +1,32 @@
+.h2s{
+    font-family: $font;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.eventos{
+    @include flexbox(row,space-around);
+
+    h5{
+        color: $main-color;
+        font-family: $font;
+        font-size:18px;
+    }
+
+    p{
+        color: $main-color;
+        font-family: $font;
+        font-size:16px;
+    }
+
+    img{
+        @include imagenes(100%, 400px, cover);
+    }
+}
+
+.card{
+    border: 2px solid rgb(57, 11, 85);
+}
+
